@@ -1,0 +1,85 @@
+{
+    "Protagonist?"
+    {
+        "Shachibukai?"
+        {
+            "Yonko?"
+            {
+                "Admiral of the Navy?"
+                {
+                    "Works for the World Government?"
+                    {
+                        "Paramecia?"
+                        {"Enel"}
+                        {"Katakuri"}
+                    }
+                    {"Rob Lucci"}
+                }
+                {
+                    "Former Admiral?"
+                    {"Kizaru"}
+                    {"Aokiji"}
+                }
+            }
+            {
+                "Zoan?"
+                {
+                    "Clown?"
+                    {"Marshall D Teach"}
+                    {"Buggy"}
+                }
+                {"Kaido"}
+            }
+        }
+        {
+            "Logia?"
+            {"Doflamingo"}
+            {"Crocodile"}
+        }
+    }
+    {
+        "From Mugiwara pirates?"
+        {
+            "Friend of King of the Pirates?"
+            {
+                "Swordsman?"
+                {
+                    "Woman?"
+                    {"Eustass Kid"}
+                    {
+                        "Zoan?"
+                        {"Boa Hancock"}
+                        {"Yamato"}
+                    }
+                }
+                {"Trafalgar Law"}
+            }
+            {
+                "Yonko?"
+                {"Rayleigh"}
+                {"Shanks"}
+            }
+        }
+        {
+            "Woman?"
+            {
+                "Dead (Yo-ho-ho-ho-ho)?"
+                {
+                    "Devil fruit user?"
+                    {
+                        "Marimo?"
+                        {"Sanji"}
+                        {"Zoro"}
+                    }
+                    {"Luffy"}
+                }
+                {"Brook"}
+            }
+            {
+                "Devil fruit user?"
+                {"Nami"}
+                {"Robin"}
+            }
+        }
+    }
+}

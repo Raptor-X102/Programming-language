@@ -1,0 +1,158 @@
+digraph List{
+rankdir=TB;
+bgcolor="#f5cbaf";
+node[fontsize=100, style=filled, fillcolor = "#f56e31", fontcolor="#000000", shape="none",style="rounded"];
+edge[color="#ff05ff",fontcolor="blue", splines = polylines];
+
+node0106BB88[shape=plaintext, color = "#ff030f", fillcolor = "#f56e31", style=filled,  label =< 
+<TABLE COLOR="red" CELLSPACING="2" CELLPADDING="2" BORDER="3"><TR><TD>Protagonist?</TD></TR></TABLE>>]
+node0106BB40[shape=plaintext, color = "#ff030f", fillcolor = "#f56e31", style=filled,  label =< 
+<TABLE COLOR="red" CELLSPACING="2" CELLPADDING="2" BORDER="3"><TR><TD>Shachibukai?</TD></TR></TABLE>>]
+node0106BD08[shape=plaintext, color = "#ff030f", fillcolor = "#f56e31", style=filled,  label =< 
+<TABLE COLOR="red" CELLSPACING="2" CELLPADDING="2" BORDER="3"><TR><TD>Yonko?</TD></TR></TABLE>>]
+node0106BC48[shape=plaintext, color = "#ff030f", fillcolor = "#f56e31", style=filled,  label =< 
+<TABLE COLOR="red" CELLSPACING="2" CELLPADDING="2" BORDER="3"><TR><TD>Admiral of the Navy?</TD></TR></TABLE>>]
+node0106BBA0[shape=plaintext, color = "#ff030f", fillcolor = "#f56e31", style=filled,  label =< 
+<TABLE COLOR="red" CELLSPACING="2" CELLPADDING="2" BORDER="3"><TR><TD>Works for the World Government?</TD></TR></TABLE>>]
+node0106BCF0[shape=plaintext, color = "#ff030f", fillcolor = "#f56e31", style=filled,  label =< 
+<TABLE COLOR="red" CELLSPACING="2" CELLPADDING="2" BORDER="3"><TR><TD>Paramecia?</TD></TR></TABLE>>]
+node0106BC18[shape=plaintext, color = "#ff030f", fillcolor = "#f56e31", style=filled,  label =< 
+<TABLE COLOR="red" CELLSPACING="2" CELLPADDING="2" BORDER="3"><TR><TD>Enel</TD></TR>
+<TR><TD><IMG SRC="Images\Enel.png" /></TD></TR></TABLE>>]
+node0106BC30[shape=plaintext, color = "#ff030f", fillcolor = "#f56e31", style=filled,  label =< 
+<TABLE COLOR="red" CELLSPACING="2" CELLPADDING="2" BORDER="3"><TR><TD>Katakuri</TD></TR>
+<TR><TD><IMG SRC="Images\Katakuri.png" /></TD></TR></TABLE>>]
+node0106BCD8[shape=plaintext, color = "#ff030f", fillcolor = "#f56e31", style=filled,  label =< 
+<TABLE COLOR="red" CELLSPACING="2" CELLPADDING="2" BORDER="3"><TR><TD>Rob Lucci</TD></TR>
+<TR><TD><IMG SRC="Images\Rob Lucci.png" /></TD></TR></TABLE>>]
+node0106BC78[shape=plaintext, color = "#ff030f", fillcolor = "#f56e31", style=filled,  label =< 
+<TABLE COLOR="red" CELLSPACING="2" CELLPADDING="2" BORDER="3"><TR><TD>Former Admiral?</TD></TR></TABLE>>]
+node0106BBB8[shape=plaintext, color = "#ff030f", fillcolor = "#f56e31", style=filled,  label =< 
+<TABLE COLOR="red" CELLSPACING="2" CELLPADDING="2" BORDER="3"><TR><TD>Kizaru</TD></TR>
+<TR><TD><IMG SRC="Images\Kizaru.png" /></TD></TR></TABLE>>]
+node0106BB58[shape=plaintext, color = "#ff030f", fillcolor = "#f56e31", style=filled,  label =< 
+<TABLE COLOR="red" CELLSPACING="2" CELLPADDING="2" BORDER="3"><TR><TD>Aokiji</TD></TR>
+<TR><TD><IMG SRC="Images\Aokiji.png" /></TD></TR></TABLE>>]
+node0106BBD0[shape=plaintext, color = "#ff030f", fillcolor = "#f56e31", style=filled,  label =< 
+<TABLE COLOR="red" CELLSPACING="2" CELLPADDING="2" BORDER="3"><TR><TD>Zoan?</TD></TR></TABLE>>]
+node0106BC90[shape=plaintext, color = "#ff030f", fillcolor = "#f56e31", style=filled,  label =< 
+<TABLE COLOR="red" CELLSPACING="2" CELLPADDING="2" BORDER="3"><TR><TD>Clown?</TD></TR></TABLE>>]
+node0106BBE8[shape=plaintext, color = "#ff030f", fillcolor = "#f56e31", style=filled,  label =< 
+<TABLE COLOR="red" CELLSPACING="2" CELLPADDING="2" BORDER="3"><TR><TD>Marshall D Teach</TD></TR>
+<TR><TD><IMG SRC="Images\Marshall D Teach.png" /></TD></TR></TABLE>>]
+node0106D848[shape=plaintext, color = "#ff030f", fillcolor = "#f56e31", style=filled,  label =< 
+<TABLE COLOR="red" CELLSPACING="2" CELLPADDING="2" BORDER="3"><TR><TD>Buggy</TD></TR>
+<TR><TD><IMG SRC="Images\Buggy.png" /></TD></TR></TABLE>>]
+node0106D620[shape=plaintext, color = "#ff030f", fillcolor = "#f56e31", style=filled,  label =< 
+<TABLE COLOR="red" CELLSPACING="2" CELLPADDING="2" BORDER="3"><TR><TD>Kaido</TD></TR>
+<TR><TD><IMG SRC="Images\Kaido.png" /></TD></TR></TABLE>>]
+node0106D908[shape=plaintext, color = "#ff030f", fillcolor = "#f56e31", style=filled,  label =< 
+<TABLE COLOR="red" CELLSPACING="2" CELLPADDING="2" BORDER="3"><TR><TD>Logia?</TD></TR></TABLE>>]
+node0106D7A0[shape=plaintext, color = "#ff030f", fillcolor = "#f56e31", style=filled,  label =< 
+<TABLE COLOR="red" CELLSPACING="2" CELLPADDING="2" BORDER="3"><TR><TD>Doflamingo</TD></TR>
+<TR><TD><IMG SRC="Images\Doflamingo.png" /></TD></TR></TABLE>>]
+node0106D7B8[shape=plaintext, color = "#ff030f", fillcolor = "#f56e31", style=filled,  label =< 
+<TABLE COLOR="red" CELLSPACING="2" CELLPADDING="2" BORDER="3"><TR><TD>Crocodile</TD></TR>
+<TR><TD><IMG SRC="Images\Crocodile.png" /></TD></TR></TABLE>>]
+node0106D638[shape=plaintext, color = "#ff030f", fillcolor = "#f56e31", style=filled,  label =< 
+<TABLE COLOR="red" CELLSPACING="2" CELLPADDING="2" BORDER="3"><TR><TD>From Mugiwara pirates?</TD></TR></TABLE>>]
+node0106D8D8[shape=plaintext, color = "#ff030f", fillcolor = "#f56e31", style=filled,  label =< 
+<TABLE COLOR="red" CELLSPACING="2" CELLPADDING="2" BORDER="3"><TR><TD>Friend of King of the Pirates?</TD></TR></TABLE>>]
+node0106D6C8[shape=plaintext, color = "#ff030f", fillcolor = "#f56e31", style=filled,  label =< 
+<TABLE COLOR="red" CELLSPACING="2" CELLPADDING="2" BORDER="3"><TR><TD>Swordsman?</TD></TR></TABLE>>]
+node0106D680[shape=plaintext, color = "#ff030f", fillcolor = "#f56e31", style=filled,  label =< 
+<TABLE COLOR="red" CELLSPACING="2" CELLPADDING="2" BORDER="3"><TR><TD>Woman?</TD></TR></TABLE>>]
+node0106D7D0[shape=plaintext, color = "#ff030f", fillcolor = "#f56e31", style=filled,  label =< 
+<TABLE COLOR="red" CELLSPACING="2" CELLPADDING="2" BORDER="3"><TR><TD>Eustass Kid</TD></TR>
+<TR><TD><IMG SRC="Images\Eustass Kid.png" /></TD></TR></TABLE>>]
+node0106D770[shape=plaintext, color = "#ff030f", fillcolor = "#f56e31", style=filled,  label =< 
+<TABLE COLOR="red" CELLSPACING="2" CELLPADDING="2" BORDER="3"><TR><TD>Zoan?</TD></TR></TABLE>>]
+node0106D7E8[shape=plaintext, color = "#ff030f", fillcolor = "#f56e31", style=filled,  label =< 
+<TABLE COLOR="red" CELLSPACING="2" CELLPADDING="2" BORDER="3"><TR><TD>Boa Hancock</TD></TR>
+<TR><TD><IMG SRC="Images\Boa Hancock.png" /></TD></TR></TABLE>>]
+node0106D800[shape=plaintext, color = "#ff030f", fillcolor = "#f56e31", style=filled,  label =< 
+<TABLE COLOR="red" CELLSPACING="2" CELLPADDING="2" BORDER="3"><TR><TD>Yamato</TD></TR>
+<TR><TD><IMG SRC="Images\Yamato.png" /></TD></TR></TABLE>>]
+node0106D698[shape=plaintext, color = "#ff030f", fillcolor = "#f56e31", style=filled,  label =< 
+<TABLE COLOR="red" CELLSPACING="2" CELLPADDING="2" BORDER="3"><TR><TD>Trafalgar Law</TD></TR>
+<TR><TD><IMG SRC="Images\Trafalgar Law.png" /></TD></TR></TABLE>>]
+node0106D6E0[shape=plaintext, color = "#ff030f", fillcolor = "#f56e31", style=filled,  label =< 
+<TABLE COLOR="red" CELLSPACING="2" CELLPADDING="2" BORDER="3"><TR><TD>Yonko?</TD></TR></TABLE>>]
+node0106D8A8[shape=plaintext, color = "#ff030f", fillcolor = "#f56e31", style=filled,  label =< 
+<TABLE COLOR="red" CELLSPACING="2" CELLPADDING="2" BORDER="3"><TR><TD>Rayleigh</TD></TR>
+<TR><TD><IMG SRC="Images\Rayleigh.png" /></TD></TR></TABLE>>]
+node0106D6B0[shape=plaintext, color = "#ff030f", fillcolor = "#f56e31", style=filled,  label =< 
+<TABLE COLOR="red" CELLSPACING="2" CELLPADDING="2" BORDER="3"><TR><TD>Shanks</TD></TR>
+<TR><TD><IMG SRC="Images\Shanks.png" /></TD></TR></TABLE>>]
+node0106D890[shape=plaintext, color = "#ff030f", fillcolor = "#f56e31", style=filled,  label =< 
+<TABLE COLOR="red" CELLSPACING="2" CELLPADDING="2" BORDER="3"><TR><TD>Woman?</TD></TR></TABLE>>]
+node0106D860[shape=plaintext, color = "#ff030f", fillcolor = "#f56e31", style=filled,  label =< 
+<TABLE COLOR="red" CELLSPACING="2" CELLPADDING="2" BORDER="3"><TR><TD>Dead (Yo-ho-ho-ho-ho)?</TD></TR></TABLE>>]
+node0106D8F0[shape=plaintext, color = "#ff030f", fillcolor = "#f56e31", style=filled,  label =< 
+<TABLE COLOR="red" CELLSPACING="2" CELLPADDING="2" BORDER="3"><TR><TD>Devil fruit user?</TD></TR></TABLE>>]
+node0106D788[shape=plaintext, color = "#ff030f", fillcolor = "#f56e31", style=filled,  label =< 
+<TABLE COLOR="red" CELLSPACING="2" CELLPADDING="2" BORDER="3"><TR><TD>Marimo?</TD></TR></TABLE>>]
+node0106D878[shape=plaintext, color = "#ff030f", fillcolor = "#f56e31", style=filled,  label =< 
+<TABLE COLOR="red" CELLSPACING="2" CELLPADDING="2" BORDER="3"><TR><TD>Sanji</TD></TR>
+<TR><TD><IMG SRC="Images\Sanji.png" /></TD></TR></TABLE>>]
+node0106D818[shape=plaintext, color = "#ff030f", fillcolor = "#f56e31", style=filled,  label =< 
+<TABLE COLOR="red" CELLSPACING="2" CELLPADDING="2" BORDER="3"><TR><TD>Zoro</TD></TR>
+<TR><TD><IMG SRC="Images\Zoro.png" /></TD></TR></TABLE>>]
+node0106D710[shape=plaintext, color = "#ff030f", fillcolor = "#f56e31", style=filled,  label =< 
+<TABLE COLOR="red" CELLSPACING="2" CELLPADDING="2" BORDER="3"><TR><TD>Luffy</TD></TR>
+<TR><TD><IMG SRC="Images\Luffy.png" /></TD></TR></TABLE>>]
+node0106D6F8[shape=plaintext, color = "#ff030f", fillcolor = "#f56e31", style=filled,  label =< 
+<TABLE COLOR="red" CELLSPACING="2" CELLPADDING="2" BORDER="3"><TR><TD>Brook</TD></TR>
+<TR><TD><IMG SRC="Images\Brook.png" /></TD></TR></TABLE>>]
+node0106D728[shape=plaintext, color = "#ff030f", fillcolor = "#f56e31", style=filled,  label =< 
+<TABLE COLOR="red" CELLSPACING="2" CELLPADDING="2" BORDER="3"><TR><TD>Devil fruit user?</TD></TR></TABLE>>]
+node0106D740[shape=plaintext, color = "#ff030f", fillcolor = "#f56e31", style=filled,  label =< 
+<TABLE COLOR="red" CELLSPACING="2" CELLPADDING="2" BORDER="3"><TR><TD>Nami</TD></TR>
+<TR><TD><IMG SRC="Images\Nami.png" /></TD></TR></TABLE>>]
+node0106D830[shape=plaintext, color = "#ff030f", fillcolor = "#f56e31", style=filled,  label =< 
+<TABLE COLOR="red" CELLSPACING="2" CELLPADDING="2" BORDER="3"><TR><TD>Robin</TD></TR>
+<TR><TD><IMG SRC="Images\Robin.png" /></TD></TR></TABLE>>]
+node0106BB88 -> node0106BB40[color = "#ff0505", splines = polylines, arrowsize = 3, fontsize=70, label = "NO      "];
+node0106BB40 -> node0106BD08[color = "#ff0505", splines = polylines, arrowsize = 3, fontsize=70, label = "NO      "];
+node0106BD08 -> node0106BC48[color = "#ff0505", splines = polylines, arrowsize = 3, fontsize=70, label = "NO      "];
+node0106BC48 -> node0106BBA0[color = "#ff0505", splines = polylines, arrowsize = 3, fontsize=70, label = "NO      "];
+node0106BBA0 -> node0106BCF0[color = "#ff0505", splines = polylines, arrowsize = 3, fontsize=70, label = "NO      "];
+node0106BCF0 -> node0106BC18[color = "#ff0505", splines = polylines, arrowsize = 3, fontsize=70, label = "NO      "];
+node0106BCF0 -> node0106BC30[color = "#ff0505", splines = polylines, arrowsize = 3, fontsize=70, label = "YES"];
+node0106BBA0 -> node0106BCD8[color = "#ff0505", splines = polylines, arrowsize = 3, fontsize=70, label = "YES"];
+node0106BC48 -> node0106BC78[color = "#ff0505", splines = polylines, arrowsize = 3, fontsize=70, label = "YES"];
+node0106BC78 -> node0106BBB8[color = "#ff0505", splines = polylines, arrowsize = 3, fontsize=70, label = "NO      "];
+node0106BC78 -> node0106BB58[color = "#ff0505", splines = polylines, arrowsize = 3, fontsize=70, label = "YES"];
+node0106BD08 -> node0106BBD0[color = "#ff0505", splines = polylines, arrowsize = 3, fontsize=70, label = "YES"];
+node0106BBD0 -> node0106BC90[color = "#ff0505", splines = polylines, arrowsize = 3, fontsize=70, label = "NO      "];
+node0106BC90 -> node0106BBE8[color = "#ff0505", splines = polylines, arrowsize = 3, fontsize=70, label = "NO      "];
+node0106BC90 -> node0106D848[color = "#ff0505", splines = polylines, arrowsize = 3, fontsize=70, label = "YES"];
+node0106BBD0 -> node0106D620[color = "#ff0505", splines = polylines, arrowsize = 3, fontsize=70, label = "YES"];
+node0106BB40 -> node0106D908[color = "#ff0505", splines = polylines, arrowsize = 3, fontsize=70, label = "YES"];
+node0106D908 -> node0106D7A0[color = "#ff0505", splines = polylines, arrowsize = 3, fontsize=70, label = "NO      "];
+node0106D908 -> node0106D7B8[color = "#ff0505", splines = polylines, arrowsize = 3, fontsize=70, label = "YES"];
+node0106BB88 -> node0106D638[color = "#ff0505", splines = polylines, arrowsize = 3, fontsize=70, label = "YES"];
+node0106D638 -> node0106D8D8[color = "#ff0505", splines = polylines, arrowsize = 3, fontsize=70, label = "NO      "];
+node0106D8D8 -> node0106D6C8[color = "#ff0505", splines = polylines, arrowsize = 3, fontsize=70, label = "NO      "];
+node0106D6C8 -> node0106D680[color = "#ff0505", splines = polylines, arrowsize = 3, fontsize=70, label = "NO      "];
+node0106D680 -> node0106D7D0[color = "#ff0505", splines = polylines, arrowsize = 3, fontsize=70, label = "NO      "];
+node0106D680 -> node0106D770[color = "#ff0505", splines = polylines, arrowsize = 3, fontsize=70, label = "YES"];
+node0106D770 -> node0106D7E8[color = "#ff0505", splines = polylines, arrowsize = 3, fontsize=70, label = "NO      "];
+node0106D770 -> node0106D800[color = "#ff0505", splines = polylines, arrowsize = 3, fontsize=70, label = "YES"];
+node0106D6C8 -> node0106D698[color = "#ff0505", splines = polylines, arrowsize = 3, fontsize=70, label = "YES"];
+node0106D8D8 -> node0106D6E0[color = "#ff0505", splines = polylines, arrowsize = 3, fontsize=70, label = "YES"];
+node0106D6E0 -> node0106D8A8[color = "#ff0505", splines = polylines, arrowsize = 3, fontsize=70, label = "NO      "];
+node0106D6E0 -> node0106D6B0[color = "#ff0505", splines = polylines, arrowsize = 3, fontsize=70, label = "YES"];
+node0106D638 -> node0106D890[color = "#ff0505", splines = polylines, arrowsize = 3, fontsize=70, label = "YES"];
+node0106D890 -> node0106D860[color = "#ff0505", splines = polylines, arrowsize = 3, fontsize=70, label = "NO      "];
+node0106D860 -> node0106D8F0[color = "#ff0505", splines = polylines, arrowsize = 3, fontsize=70, label = "NO      "];
+node0106D8F0 -> node0106D788[color = "#ff0505", splines = polylines, arrowsize = 3, fontsize=70, label = "NO      "];
+node0106D788 -> node0106D878[color = "#ff0505", splines = polylines, arrowsize = 3, fontsize=70, label = "NO      "];
+node0106D788 -> node0106D818[color = "#ff0505", splines = polylines, arrowsize = 3, fontsize=70, label = "YES"];
+node0106D8F0 -> node0106D710[color = "#ff0505", splines = polylines, arrowsize = 3, fontsize=70, label = "YES"];
+node0106D860 -> node0106D6F8[color = "#ff0505", splines = polylines, arrowsize = 3, fontsize=70, label = "YES"];
+node0106D890 -> node0106D728[color = "#ff0505", splines = polylines, arrowsize = 3, fontsize=70, label = "YES"];
+node0106D728 -> node0106D740[color = "#ff0505", splines = polylines, arrowsize = 3, fontsize=70, label = "NO      "];
+node0106D728 -> node0106D830[color = "#ff0505", splines = polylines, arrowsize = 3, fontsize=70, label = "YES"];
+
+}
