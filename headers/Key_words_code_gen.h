@@ -1,0 +1,5 @@
+KEY_WORD(IF, "(o_0)")
+KEY_WORD(WHILE, "(-_-;)")
+KEY_WORD(YES, "(^o^):")
+KEY_WORD(NO, "(=_=):")
+KEY_WORD(RETURN, "*(^_^)*")
