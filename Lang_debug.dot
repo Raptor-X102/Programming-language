@@ -1,0 +1,16 @@
+digraph List{
+rankdir=TB;
+bgcolor="#f5cbaf";
+node[fontsize=12, style=filled, fillcolor = "#f56e31", fontcolor="#000000", shape="none",style="rounded"];
+edge[color="#ff05ff",fontcolor="blue", splines = polylines];
+
+node02F90540[color = "#ff030f", fillcolor = "#f56e31", style=filled, shape = record,  label = "{ Address: 02F90540 | Data: expression_type = 0XD15AB1ED (SPECIAL_SYMBOL), \n value = 0XF7 | { <left> Left_node: 0122BD50 | <right> Right_node: 02F90600 }}"];
+node0122BD50[color = "#ff030f", fillcolor = "#f56e31", style=filled, shape = record,  label = "{ Address: 0122BD50 | Data: expression_type = 0X4 (FUNCTION), \n value =  | { <left> Left_node: 00000000 | <right> Right_node: 02F90240 }}"];
+node02F90240[color = "#ff030f", fillcolor = "#f56e31", style=filled, shape = record,  label = "{ Address: 02F90240 | Data: expression_type = 0XD15AB1ED (SPECIAL_SYMBOL), \n value = 0XF00 | { <left> Left_node: 02F90360 | <right> Right_node: 02F900F0 }}"];
+node02F90360[color = "#ff030f", fillcolor = "#f56e31", style=filled, shape = record,  label = "{ Address: 02F90360 | Data: expression_type = 0XD15AB1ED (SPECIAL_SYMBOL), \n value = 0XFA | { <left> Left_node: 02F901B0 | <right> Right_node: 02F90258 }}"];
+node02F901B0[color = "#ff030f", fillcolor = "#f56e31", style=filled, shape = record,  label = "{ Address: 02F901B0 | Data: expression_type = 0X2 (VAR), \n value = n | { <left> Left_node: 00000000 | <right> Right_node: 00000000 }}"];
+node02F90258[color = "#ff030f", fillcolor = "#f56e31", style=filled, shape = record,  label = "{ Address: 02F90258 | Data: expression_type = 0X1 (NUM), \n value = 10 | { <left> Left_node: 00000000 | <right> Right_node: 00000000 }}"];
+node02F900F0[color = "#ff030f", fillcolor = "#f56e31", style=filled, shape = record,  label = "{ Address: 02F900F0 | Data: expression_type = 0XD15AB1ED (SPECIAL_SYMBOL), \n value = 0XF00 | { <left> Left_node: 02F901C8 | <right> Right_node: 02F903C0 }}"];
+node02F901C8[color = "#ff030f", fillcolor = "#f56e31", style=filled, shape = record,  label = "{ Address: 02F901C8 | Data: expression_type = 0XD15AB1ED (SPECIAL_SYMBOL), \n value = 0XFA | { <left> Left_node: 02F902B8 | <right> Right_node: 02F901F8 }}"];
+node02F902B8[color = "#ff030f", fillcolor = "#f56e31", style=filled, shape = record,  label = "{ Address: 02F902B8 | Data: expression_type = 0X2 (VAR), \n value = a | { <left> Left_node: 00000000 | <right> Right_node: 00000000 }}"];
+node02F901F8[color = "#ff030f", fillcolor = "#f56e31", style=filled, shape = record,  label = "{ Address: 02F901F8 | Data: expression_type = 0X4 (FUNCTION), \n value = 
