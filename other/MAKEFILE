@@ -1,0 +1,62 @@
+SHELL = C:/Windows/System32/cmd.exe
+
+CC = g++
+
+CFLAGS = -Wformat=2 -Wshadow -Winit-self -Wredundant-decls -Wcast-align -Wundef -Wfloat-equal \
+-Winline -Wunreachable-code -Wmissing-declarations -Wmissing-include-dirs \
+-Wswitch-enum -Wswitch-default -Weffc++ -Wmain -Wextra -Wall -g -pipe -fexceptions \
+-Wcast-qual -Wconversion -Wctor-dtor-privacy -Wempty-body -Wformat-security -Wformat=2 \
+-Wignored-qualifiers -Wlogical-op -Wno-missing-field-initializers -Wnon-virtual-dtor \
+-Woverloaded-virtual -Wpointer-arith -Wsign-promo -Wstack-usage=8192 -Wstrict-aliasing \
+-Wstrict-null-sentinel -Wtype-limits -Wwrite-strings -Werror=vla -D_DEBUG -D_EJUDGE_CLIENT_SIDE
+
+DEBUG = NO_DEBUG
+SOURCES_DIR = src
+SOURCES = $(wildcard $(SOURCES_DIR)/*.cpp)
+HEADERS_DIR = headers
+GLOBAL_HEADERS = ..\headers
+LIBS_BIN_TREES = Binary_Trees
+LIB_BIN_TREES_SRC = $(wildcard $(LIBS_BIN_TREES)/*.cpp)
+LIBS_CHECK_R_W_FLAGS = Check_flags
+LIB_CHECK_R_W_FLAGS_SRC = $(wildcard $(LIBS_CHECK_R_W_FLAGS)/*.cpp)
+LIBS_STACK = Binary_Trees\Stack
+LIB_STACK_SRC = $(wildcard $(LIBS_STACK)/*.cpp)
+LIBS_SPU = Processor\src
+LIBS_SPU_HEADERS = Processor\headers
+LIBS_SPU_SRC = $(wildcard $(LIBS_SPU)/*.cpp)
+
+BUILD_DIR = build
+OBJ_DIR = obj
+OBJECTS = $(wildcard $(OBJ_DIR)/*.o)
+EXECUTABLE = lang.exe
+
+setup:
+	mkdir $(BUILD_DIR)
+	mkdir $(OBJ_DIR)
+	mkdir $(SOURCES_DIR)
+	mkdir $(HEADERS_DIR)
+
+clean_exe:
+	rm $(BUILD_DIR)/*.exe
+
+clean_obj:
+	rm $(OBJ_DIR)/*.o
+
+clean_dump:
+	rm dump/*.png
+	rm dump/*.dot
+
+clean:
+	rm $(BUILD_DIR)
+	rm $(OBJ_DIR)
+
+create_obj:
+	$(CC) $(SOURCES) $(LIB_BIN_TREES_SRC) $(LIB_CHECK_R_W_FLAGS_SRC) $(LIB_STACK_SRC) $(LIBS_SPU_SRC) -c -I $(HEADERS_DIR) -I $(LIBS_BIN_TREES) -I $(LIBS_CHECK_R_W_FLAGS) -I $(LIBS_STACK) -I $(LIBS_SPU_HEADERS) -D $(DEBUG) $(CFLAGS)
+	mv *.o $(OBJ_DIR)
+
+linkage:
+	$(CC) $(OBJECTS) -o $(BUILD_DIR)/$(EXECUTABLE)
+
+compile:
+	make create_obj
+	make linkage

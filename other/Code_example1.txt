@@ -1,0 +1,30 @@
+< fact(a)
+	a = -(2-3) + 4
+	(-_-;) n >= 0:
+		a = a * (n - 1)
+
+		something(q, b)
+
+	(o_0) a < b
+	(^o^):
+		smthng1(a)
+
+	(=_=):
+		smthng2()
+
+	*(^_^)* a
+>
+
+< main()
+
+	n = 10
+	fact(n)
+	*(^_^)* 0
+>
+
+< Solve_quadratic_eq(a, b, c)
+
+	x1 = (b + sqrt(b^2 - 4 * a * c)) / 2
+	*(^_^)* x1
+>
+
