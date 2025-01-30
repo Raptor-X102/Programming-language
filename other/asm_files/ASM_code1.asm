@@ -1,0 +1,53 @@
+PUSH BX
+CALL main
+HLT
+
+main:
+PUSH 10
+POP [BX+0]
+PUSH BX
+PUSH [BX+0]
+PUSH BX
+PUSH 2
+ADD
+POP BX
+CALL fact
+POP [BX+1]
+PUSH [BX+1]
+OUT
+PUSH 0
+POP RX
+POP BX
+PUSH RX
+RET
+fact:
+POP [BX+0]
+PUSH [BX+0]
+PUSH 1
+JE fact_if_0_yes
+JMP fact_if_0_no
+
+fact_if_0_yes:
+PUSH [BX+0]
+POP RX
+POP BX
+PUSH RX
+RET
+JMP fact_if_0_yes_ret
+fact_if_0_no:
+PUSH [BX+0]
+PUSH BX
+PUSH [BX+0]
+PUSH 1
+SUB
+PUSH BX
+PUSH 1
+ADD
+POP BX
+CALL fact
+MUL
+POP RX
+POP BX
+PUSH RX
+RET
+fact_if_0_yes_ret:

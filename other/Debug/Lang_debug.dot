@@ -1,0 +1,73 @@
+digraph List{
+rankdir=TB;
+bgcolor="#f5cbaf";
+node[fontsize=12, style=filled, fillcolor = "#f56e31", fontcolor="#000000", shape="none",style="rounded"];
+edge[color="#ff05ff",fontcolor="blue", splines = polylines];
+
+node0135E450[color = "#ff030f", fillcolor = "#f56e31", style=filled, shape = record,  label = "{ Address: 0135E450 | Data: expression_type = 0XD15AB1ED (SPECIAL_SYMBOL), \n value = 0XF7 | { <left> Left_node: 0135BEA0 | <right> Right_node: 0135E648 }}"];
+node0135BEA0[color = "#ff030f", fillcolor = "#f56e31", style=filled, shape = record,  label = "{ Address: 0135BEA0 | Data: expression_type = 0X4 (FUNCTION), \n value = main | { <left> Left_node: 00000000 | <right> Right_node: 0135E090 }}"];
+node0135E090[color = "#ff030f", fillcolor = "#f56e31", style=filled, shape = record,  label = "{ Address: 0135E090 | Data: expression_type = 0XD15AB1ED (SPECIAL_SYMBOL), \n value = 0XF00 | { <left> Left_node: 0135E150 | <right> Right_node: 0135E210 }}"];
+node0135E150[color = "#ff030f", fillcolor = "#f56e31", style=filled, shape = record,  label = "{ Address: 0135E150 | Data: expression_type = 0XD15AB1ED (SPECIAL_SYMBOL), \n value = 0XFA | { <left> Left_node: 0135E120 | <right> Right_node: 0135E138 }}"];
+node0135E120[color = "#ff030f", fillcolor = "#f56e31", style=filled, shape = record,  label = "{ Address: 0135E120 | Data: expression_type = 0X2 (VAR), \n value = n | { <left> Left_node: 00000000 | <right> Right_node: 00000000 }}"];
+node0135E138[color = "#ff030f", fillcolor = "#f56e31", style=filled, shape = record,  label = "{ Address: 0135E138 | Data: expression_type = 0X1 (NUM), \n value = 10 | { <left> Left_node: 00000000 | <right> Right_node: 00000000 }}"];
+node0135E210[color = "#ff030f", fillcolor = "#f56e31", style=filled, shape = record,  label = "{ Address: 0135E210 | Data: expression_type = 0XD15AB1ED (SPECIAL_SYMBOL), \n value = 0XF00 | { <left> Left_node: 0135E228 | <right> Right_node: 0135E348 }}"];
+node0135E228[color = "#ff030f", fillcolor = "#f56e31", style=filled, shape = record,  label = "{ Address: 0135E228 | Data: expression_type = 0XD15AB1ED (SPECIAL_SYMBOL), \n value = 0XFA | { <left> Left_node: 0135E0C0 | <right> Right_node: 0135E030 }}"];
+node0135E0C0[color = "#ff030f", fillcolor = "#f56e31", style=filled, shape = record,  label = "{ Address: 0135E0C0 | Data: expression_type = 0X2 (VAR), \n value = a | { <left> Left_node: 00000000 | <right> Right_node: 00000000 }}"];
+node0135E030[color = "#ff030f", fillcolor = "#f56e31", style=filled, shape = record,  label = "{ Address: 0135E030 | Data: expression_type = 0X4 (FUNCTION), \n value = fact | { <left> Left_node: 0135E060 | <right> Right_node: 00000000 }}"];
+node0135E060[color = "#ff030f", fillcolor = "#f56e31", style=filled, shape = record,  label = "{ Address: 0135E060 | Data: expression_type = 0X2 (VAR), \n value = n | { <left> Left_node: 00000000 | <right> Right_node: 00000000 }}"];
+node0135E348[color = "#ff030f", fillcolor = "#f56e31", style=filled, shape = record,  label = "{ Address: 0135E348 | Data: expression_type = 0XD15AB1ED (SPECIAL_SYMBOL), \n value = 0XF00 | { <left> Left_node: 0135E048 | <right> Right_node: 0135E390 }}"];
+node0135E048[color = "#ff030f", fillcolor = "#f56e31", style=filled, shape = record,  label = "{ Address: 0135E048 | Data: expression_type = 0X4 (FUNCTION), \n value = out | { <left> Left_node: 0135DFD0 | <right> Right_node: 00000000 }}"];
+node0135DFD0[color = "#ff030f", fillcolor = "#f56e31", style=filled, shape = record,  label = "{ Address: 0135DFD0 | Data: expression_type = 0X2 (VAR), \n value = a | { <left> Left_node: 00000000 | <right> Right_node: 00000000 }}"];
+node0135E390[color = "#ff030f", fillcolor = "#f56e31", style=filled, shape = record,  label = "{ Address: 0135E390 | Data: expression_type = 0XC0DE (KEY_WORD), \n value = *(^_^)* 0XE4 | { <left> Left_node: 00000000 | <right> Right_node: 0135E570 }}"];
+node0135E570[color = "#ff030f", fillcolor = "#f56e31", style=filled, shape = record,  label = "{ Address: 0135E570 | Data: expression_type = 0X1 (NUM), \n value = 0 | { <left> Left_node: 00000000 | <right> Right_node: 00000000 }}"];
+node0135E648[color = "#ff030f", fillcolor = "#f56e31", style=filled, shape = record,  label = "{ Address: 0135E648 | Data: expression_type = 0X4 (FUNCTION), \n value = fact | { <left> Left_node: 0135E678 | <right> Right_node: 0135E5D0 }}"];
+node0135E678[color = "#ff030f", fillcolor = "#f56e31", style=filled, shape = record,  label = "{ Address: 0135E678 | Data: expression_type = 0X2 (VAR), \n value = n | { <left> Left_node: 00000000 | <right> Right_node: 00000000 }}"];
+node0135E5D0[color = "#ff030f", fillcolor = "#f56e31", style=filled, shape = record,  label = "{ Address: 0135E5D0 | Data: expression_type = 0XC0DE (KEY_WORD), \n value = (o_0) 0XE0 | { <left> Left_node: 0135ED08 | <right> Right_node: 0135EE28 }}"];
+node0135ED08[color = "#ff030f", fillcolor = "#f56e31", style=filled, shape = record,  label = "{ Address: 0135ED08 | Data: expression_type = 0X5 (CONDITION), \n value = 0XD4 | { <left> Left_node: 0135E660 | <right> Right_node: 0135E738 }}"];
+node0135E660[color = "#ff030f", fillcolor = "#f56e31", style=filled, shape = record,  label = "{ Address: 0135E660 | Data: expression_type = 0X2 (VAR), \n value = n | { <left> Left_node: 00000000 | <right> Right_node: 00000000 }}"];
+node0135E738[color = "#ff030f", fillcolor = "#f56e31", style=filled, shape = record,  label = "{ Address: 0135E738 | Data: expression_type = 0X1 (NUM), \n value = 1 | { <left> Left_node: 00000000 | <right> Right_node: 00000000 }}"];
+node0135EE28[color = "#ff030f", fillcolor = "#f56e31", style=filled, shape = record,  label = "{ Address: 0135EE28 | Data: expression_type = 0XBEAF (IF_BRANCHES), \n value = CONNECTOR | { <left> Left_node: 0135E840 | <right> Right_node: 0135E9A8 }}"];
+node0135E840[color = "#ff030f", fillcolor = "#f56e31", style=filled, shape = record,  label = "{ Address: 0135E840 | Data: expression_type = 0XC0DE (KEY_WORD), \n value = *(^_^)* 0XE4 | { <left> Left_node: 00000000 | <right> Right_node: 0135E810 }}"];
+node0135E810[color = "#ff030f", fillcolor = "#f56e31", style=filled, shape = record,  label = "{ Address: 0135E810 | Data: expression_type = 0X2 (VAR), \n value = n | { <left> Left_node: 00000000 | <right> Right_node: 00000000 }}"];
+node0135E9A8[color = "#ff030f", fillcolor = "#f56e31", style=filled, shape = record,  label = "{ Address: 0135E9A8 | Data: expression_type = 0XC0DE (KEY_WORD), \n value = *(^_^)* 0XE4 | { <left> Left_node: 00000000 | <right> Right_node: 0135E8E8 }}"];
+node0135E8E8[color = "#ff030f", fillcolor = "#f56e31", style=filled, shape = record,  label = "{ Address: 0135E8E8 | Data: expression_type = 0X3 (OP), \n value = * 0X5
+ | { <left> Left_node: 0135E9C0 | <right> Right_node: 0135EA08 }}"];
+node0135E9C0[color = "#ff030f", fillcolor = "#f56e31", style=filled, shape = record,  label = "{ Address: 0135E9C0 | Data: expression_type = 0X2 (VAR), \n value = n | { <left> Left_node: 00000000 | <right> Right_node: 00000000 }}"];
+node0135EA08[color = "#ff030f", fillcolor = "#f56e31", style=filled, shape = record,  label = "{ Address: 0135EA08 | Data: expression_type = 0X4 (FUNCTION), \n value = fact | { <left> Left_node: 0135EAF8 | <right> Right_node: 00000000 }}"];
+node0135EAF8[color = "#ff030f", fillcolor = "#f56e31", style=filled, shape = record,  label = "{ Address: 0135EAF8 | Data: expression_type = 0X3 (OP), \n value = - 0X3
+ | { <left> Left_node: 0135EAE0 | <right> Right_node: 0135EB28 }}"];
+node0135EAE0[color = "#ff030f", fillcolor = "#f56e31", style=filled, shape = record,  label = "{ Address: 0135EAE0 | Data: expression_type = 0X2 (VAR), \n value = n | { <left> Left_node: 00000000 | <right> Right_node: 00000000 }}"];
+node0135EB28[color = "#ff030f", fillcolor = "#f56e31", style=filled, shape = record,  label = "{ Address: 0135EB28 | Data: expression_type = 0X1 (NUM), \n value = 1 | { <left> Left_node: 00000000 | <right> Right_node: 00000000 }}"];
+node0135E450:left -> node0135BEA0[color = "#ff0505", splines = polylines, fontsize=12];
+node0135BEA0:right -> node0135E090[color = "#ff0505", splines = polylines, fontsize=12];
+node0135E090:left -> node0135E150[color = "#ff0505", splines = polylines, fontsize=12];
+node0135E150:left -> node0135E120[color = "#ff0505", splines = polylines, fontsize=12];
+node0135E150:right -> node0135E138[color = "#ff0505", splines = polylines, fontsize=12];
+node0135E090:right -> node0135E210[color = "#ff0505", splines = polylines, fontsize=12];
+node0135E210:left -> node0135E228[color = "#ff0505", splines = polylines, fontsize=12];
+node0135E228:left -> node0135E0C0[color = "#ff0505", splines = polylines, fontsize=12];
+node0135E228:right -> node0135E030[color = "#ff0505", splines = polylines, fontsize=12];
+node0135E030:left -> node0135E060[color = "#ff0505", splines = polylines, fontsize=12];
+node0135E210:right -> node0135E348[color = "#ff0505", splines = polylines, fontsize=12];
+node0135E348:left -> node0135E048[color = "#ff0505", splines = polylines, fontsize=12];
+node0135E048:left -> node0135DFD0[color = "#ff0505", splines = polylines, fontsize=12];
+node0135E348:right -> node0135E390[color = "#ff0505", splines = polylines, fontsize=12];
+node0135E390:right -> node0135E570[color = "#ff0505", splines = polylines, fontsize=12];
+node0135E450:right -> node0135E648[color = "#ff0505", splines = polylines, fontsize=12];
+node0135E648:left -> node0135E678[color = "#ff0505", splines = polylines, fontsize=12];
+node0135E648:right -> node0135E5D0[color = "#ff0505", splines = polylines, fontsize=12];
+node0135E5D0:left -> node0135ED08[color = "#ff0505", splines = polylines, fontsize=12];
+node0135ED08:left -> node0135E660[color = "#ff0505", splines = polylines, fontsize=12];
+node0135ED08:right -> node0135E738[color = "#ff0505", splines = polylines, fontsize=12];
+node0135E5D0:right -> node0135EE28[color = "#ff0505", splines = polylines, fontsize=12];
+node0135EE28:left -> node0135E840[color = "#ff0505", splines = polylines, fontsize=12];
+node0135E840:right -> node0135E810[color = "#ff0505", splines = polylines, fontsize=12];
+node0135EE28:right -> node0135E9A8[color = "#ff0505", splines = polylines, fontsize=12];
+node0135E9A8:right -> node0135E8E8[color = "#ff0505", splines = polylines, fontsize=12];
+node0135E8E8:left -> node0135E9C0[color = "#ff0505", splines = polylines, fontsize=12];
+node0135E8E8:right -> node0135EA08[color = "#ff0505", splines = polylines, fontsize=12];
+node0135EA08:left -> node0135EAF8[color = "#ff0505", splines = polylines, fontsize=12];
+node0135EAF8:left -> node0135EAE0[color = "#ff0505", splines = polylines, fontsize=12];
+node0135EAF8:right -> node0135EB28[color = "#ff0505", splines = polylines, fontsize=12];
+
+}
