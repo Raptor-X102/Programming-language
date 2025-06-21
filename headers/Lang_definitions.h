@@ -1,7 +1,7 @@
 #ifndef LANG_DEFS
 #define LANG_DEFS
 
-#include "..\Binary_Trees\Tree_definitions.h"
+#include "Tree_definitions.h"
 
 struct Node_data {
 
@@ -16,7 +16,7 @@ enum Expression_type {
     OP = 0x3,
     FUNCTION = 0x4,
     CONDITION = 0x5,
-    SPECIAL_SYMBOL = 0xd15ab1ed,
+    SPECIAL_SYMBOL = 0xDEAD,
     KEY_WORD = 0xC0DE,
     IF_BRANCHES = 0xBEAF
 };

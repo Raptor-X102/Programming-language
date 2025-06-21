@@ -17,8 +17,8 @@ bool Create_new_node(Node** node, const void* data, size_t data_size) {
         return false;
     }
 
-    DEBUG_PRINTF("(*node)->node_data = %p\n", (*node)->node_data);
-    DEBUG_PRINTF("data = %p\n", data);
+    //DEBUG_PRINTF("(*node)->node_data = %p\n", (*node)->node_data);
+    //DEBUG_PRINTF("data = %p\n", data);
     memcpy(&(*node)->node_data, data, data_size);
 
     return true;

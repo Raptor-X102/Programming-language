@@ -13,7 +13,7 @@ Commands_data Commands[] =
 
 void Compile_code(const char* compiling_file, const char* out_file, Labels* labels) {
 
-    uint64_t file_size = get_file_size(compiling_file);
+    uint64_t file_size = get_file_size(compiling_file); DEBUG_PRINTF("Size was gotten\n");
 
     FILE* input_file = fopen(compiling_file, "rb");
     if(!input_file) {
@@ -31,9 +31,13 @@ void Compile_code(const char* compiling_file, const char* out_file, Labels* labe
         return;
     }
 
+    DEBUG_PRINTF("convertion started\n");
     commands_amount = Convert_txt_to_code(input_file, output_file, file_size, labels);
+    DEBUG_PRINTF("commands_amount = %d", commands_amount);
+    DEBUG_PRINTF("ended\n");
 
     fclose(output_file);
+    DEBUG_PRINTF("output file was closed\n");
 }
 
 // fixme
@@ -114,7 +118,7 @@ uint64_t Convert_txt_to_code(FILE* input_file, FILE* output_file, uint64_t code_
     uint64_t curr_code_byte = 0, inword_pos = 0, curr_pos = 0;
 
     for(; input_buffer[curr_pos] != EOF &&
-          curr_pos < code_length; curr_pos = inword_pos + 1) {
+          curr_pos < code_length; curr_pos = inword_pos + 1) { // fixme: scanf
 
         bool cmd_found = false;
         Get_next_word(input_buffer, &curr_pos, &inword_pos, code_length);
@@ -186,6 +190,8 @@ void Get_next_word(char* input_buffer, uint64_t* curr_pos, uint64_t* inword_pos,
 
         input_buffer[*inword_pos] = '\0';
 
+        DEBUG_PRINTF("input_buffer + curr_pos = %s\n", input_buffer + *curr_pos);
+        //getchar();
         return;
     }
 }
@@ -323,21 +329,28 @@ bool Chech_brackets(const char* code_str) {
 
 void ASM_Get_arg(char* code_data, uint64_t* curr_code_byte, const char* code_str, Labels* labels) {
 
+    DEBUG_PRINTF("\n\n ASM_Get_arg\n");
+
     char* tmp_ptr = strchr(code_str, '+');
 
     if(tmp_ptr) {
 
         int tmp_const = NUMBER_MASK + REGISTER_MASK;
 
+        DEBUG_PRINTF("+ \n");
+        DEBUG_PRINTF("\n\ntmp_ptr = %s %s %s\n\n", tmp_ptr, tmp_ptr+1,tmp_ptr+2);
+
         code_data[*curr_code_byte+1] = Check_register(code_str);
 
         if(Chech_brackets(code_str)) {
 
             int64_t tmp_int = atoll(tmp_ptr+1);
+            DEBUG_PRINTF("number + reg = %lld\n", tmp_int);
             memcpy(&code_data[*curr_code_byte+2],  &tmp_int, sizeof(int64_t));
             tmp_const += RAM_MASK;
             code_data[*curr_code_byte] = tmp_const;
             *curr_code_byte += 2*sizeof(char) + sizeof(double);
+            DEBUG_PRINTF("[]\n");
         }
         else {
 
@@ -353,10 +366,12 @@ void ASM_Get_arg(char* code_data, uint64_t* curr_code_byte, const char* code_str
         if(Chech_brackets(code_str)) {
 
             code_data[*curr_code_byte] = RAM_MASK;
+            DEBUG_PRINTF("[]\n");
             int push_register = Check_register(code_str);
 
             if(push_register >= 0) {
 
+                DEBUG_PRINTF("%c%c\n", code_str[1], code_str[2]);
                 code_data[*curr_code_byte] += REGISTER_MASK;
                 code_data[*curr_code_byte+1] = push_register;
                 *curr_code_byte += 2*sizeof(char);
@@ -364,6 +379,7 @@ void ASM_Get_arg(char* code_data, uint64_t* curr_code_byte, const char* code_str
             else {
 
                 double tmp_double = atof(tmp_ptr+1);
+                DEBUG_PRINTF("number = %lg\n", tmp_double);
                 code_data[*curr_code_byte] += NUMBER_MASK;
                 memcpy(&code_data[*curr_code_byte+1],  &tmp_double, sizeof(double));
                 *curr_code_byte += sizeof(char) + sizeof(double);
@@ -376,6 +392,7 @@ void ASM_Get_arg(char* code_data, uint64_t* curr_code_byte, const char* code_str
 
             if(push_register >= 0) {
 
+                DEBUG_PRINTF("%c%c\n", code_str[0], code_str[1]);
                 code_data[*curr_code_byte] = REGISTER_MASK;
                 code_data[*curr_code_byte+1] = push_register;
                 *curr_code_byte += 2*sizeof(char);
@@ -393,6 +410,8 @@ void ASM_Get_arg(char* code_data, uint64_t* curr_code_byte, const char* code_str
                 else
                     tmp_double = atof(code_str);
 
+                DEBUG_PRINTF("number = %lg\n", tmp_double);
+
                 code_data[*curr_code_byte] = NUMBER_MASK;
                 memcpy(&code_data[*curr_code_byte+1], &tmp_double, sizeof(double));
                 *curr_code_byte += sizeof(char) + sizeof(double);
@@ -403,6 +422,7 @@ void ASM_Get_arg(char* code_data, uint64_t* curr_code_byte, const char* code_str
 
 void ASM_Get_label(char* code_data, uint64_t* curr_code_byte, const char* code_str, Labels* labels) {
 
+    DEBUG_PRINTF("ASM_Get_label: %s\n", code_str);
     int64_t label_pos = Find_label(code_str, labels);
     if(label_pos >= 0) {
 

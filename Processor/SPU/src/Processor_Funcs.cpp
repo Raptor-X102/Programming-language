@@ -37,8 +37,9 @@ void SPU_Ctor(SPU_data * processor, const char* filename) {
         DEBUG_PRINTF("ERROR: RAM was not allocated\n");
 }
 
-void SPU_Run(SPU_data * processor) {
+void SPU_Run(SPU_data * processor) { // TODO: rename (prefix)
 
+    //DEBUG_PRINTF("*processor = ", *processor);
     while(true) {
 
         if(processor->cmd_code[processor->IP] == CMD_HLT)
@@ -86,6 +87,8 @@ void Read_code_file(SPU_data * processor, const char* file_name) {
         DEBUG_PRINTF("ERROR: fread failed\n");
         return;
     }
+    DEBUG_PRINTF("(processor->code_size) = %d\n", (processor->code_size));
+    //getchar();
 
     if(processor->code_size) {
 
@@ -116,6 +119,11 @@ void Read_code_file(SPU_data * processor, const char* file_name) {
         DEBUG_PRINTF("ERROR: fread failed\n");
         return;
     }
+    DEBUG_PRINTF("read_code_file\n");
+    for(int i = 0; i < processor->code_size; i++)
+        DEBUG_PRINTF("%x ", processor->cmd_code[i]);
+
+    DEBUG_PRINTF("\n");
 }
 
 void SPU_Push(SPU_data* processor) {
@@ -180,6 +188,7 @@ void SPU_Hlt(SPU_data* processor) {
 void SPU_Pop(SPU_data* processor) {
 
     void* tmp = Get_pop_arg(processor);
+    fprintf(stderr,"tmp = %p\n", tmp);
     StackPop(&processor->stack, tmp);
 }
 
@@ -249,6 +258,7 @@ void SPU_Out(SPU_data* processor) {
 
     double out = 0;
     StackPop(&(processor->stack), &out);
+    DEBUG_PRINTF("\nOUT: %lg\n\n", out);
     processor->IP++;
 }
 

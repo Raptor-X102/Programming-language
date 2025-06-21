@@ -1,8 +1,8 @@
-FUNC(ADD, "+")
-FUNC(SUB, "-")
-FUNC(MUL, "*")
-FUNC(DIV, "/")
-FUNC(POW, "^")
+FUNC_BASIC(ADD, "+")
+FUNC_BASIC(SUB, "-")
+FUNC_BASIC(MUL, "*")
+FUNC_BASIC(DIV, "/")
+FUNC_BASIC(POW, "^")
 
 FUNC(LN,  "ln")
 FUNC(SIN, "sin")

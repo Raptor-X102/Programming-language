@@ -53,6 +53,17 @@ void SPU_Dump(const SPU_data * processor, void (* Printf_Format_Func)(const void
     for(int commands_amount = 0; commands_amount < Registers_amount; commands_amount++)
         DEBUG_PRINTF("%.2lg ", processor->registers[commands_amount]);
 
+    /*DEBUG_PRINTF("\nRAM: \n");
+
+    int scale_ram = 20;
+
+    for(int i = 0; i < 400; i+=scale_ram) {
+        for(int j = i; j < i + scale_ram; j++)
+            DEBUG_PRINTF("%4.2lg ", processor->RAM[j]);
+
+        DEBUG_PRINTF("\n");
+    }
+    */
     DEBUG_PRINTF("\n-----------------------------------------------------------------------------------------\n");
     getchar();
 }

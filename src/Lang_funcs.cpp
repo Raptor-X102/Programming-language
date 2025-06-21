@@ -51,9 +51,6 @@ void Print_node_data(const void* data, FILE* file) {
             Variable_data* tmp_int = 0;
             memcpy(&tmp_int, &tmp_node_data->value, sizeof(Variable_data*));
             fprintf(file, "value = %.*s", (size_t) tmp_int->var_len, tmp_int->var_name);
-            DEBUG_PRINTF("value = (p) %p\n", (tmp_int->var_name));
-            DEBUG_PRINTF("value = (c) %c\n", *(tmp_int->var_name));
-            DEBUG_PRINTF("DEBUGGGGGGGG value = %.*s\n", (size_t) tmp_int->var_len, tmp_int->var_name);
             break;
         }
 
@@ -68,9 +65,13 @@ void Print_node_data(const void* data, FILE* file) {
                                                                fprintf(file, "value = %s ", func_full_name);\
                                                                fprintf(file, "%#X", func_name);\
                                                                break;
-
+                #define FUNC_BASIC(func_name, func_full_name) case func_name:\
+                                                               fprintf(file, "value = %s ", func_full_name);\
+                                                               fprintf(file, "%#X", func_name);\
+                                                               break;
                 #include "Funcs_code_gen.h"
                 #undef FUNC
+                #undef FUNC_BASIC
 
                 default:
 
@@ -186,5 +187,4 @@ void Lang_dtor(Node* root) {
         free(tmp_node_data_ptr);
         free(root);
     }
-
 }

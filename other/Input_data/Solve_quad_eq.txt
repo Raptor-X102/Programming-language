@@ -1,0 +1,55 @@
+< main()
+
+	In(a)
+	In(b)
+	In(c)
+	Out(Solve_quad_eq(a, b, c))
+	*(^_^)* 0
+>
+
+< Solve_quad_eq(a, b, c)
+
+	epsilon = 0.000001
+	D = b * b - 4 * a * c
+	(o_0) D < 0
+	(^o^):
+		*(^_^)* 0
+
+	S_D = sqrt(D)
+
+	(o_0) abs(a) < epsilon
+	(^o^):
+		*(^_^)* Solve_lin_eq(b, c)
+
+	(o_0) D < epsilon
+	(^o^):
+		x1 = -b / (2 * a)
+		Out(x1)
+		*(^_^)* 1
+
+	x1 = (-b + S_D)/(2 * a)
+	x2 = (-b - S_D)/(2 * a)
+	Out(x1)
+	Out(x2)
+	*(^_^)* 2
+>
+
+< Solve_lin_eq(b, c)
+
+	epsilon = 0.000001
+
+	(o_0) abs(b) < epsilon
+	(^o^):
+
+		(o_0) abs(c) < epsilon
+		(^o^):
+			*(^_^)* INF
+
+		(=_=):
+			*(^_^)* 0
+
+	(=_=):
+		x1 = -c / b
+		Out(x1)
+		*(^_^)* 1
+>

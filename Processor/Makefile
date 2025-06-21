@@ -10,9 +10,12 @@ CFLAGS = -D NO_DEBUG -Wformat=2 -Wshadow -Winit-self -Wredundant-decls -Wcast-al
 
 DEBUG = NO_DEBUG
 SOURCES_DIR = src
-ASM = ASM
+ASM = My_asm
 SPU = SPU
-SOURCES = $(wildcard $(SOURCES_DIR)/*.cpp)
+SRC_ASM = $(ASM)/src
+SRC_SPU = $(SPU)/src
+SOURCES_ASM = $(wildcard $(SRC_ASM)/*.cpp)
+SOURCES_SPU = $(wildcard $(SRC_SPU)/*.cpp)
 HEADERS_DIR = headers
 GLOBAL_HEADERS = ..\headers
 STACK = Stack
@@ -29,9 +32,10 @@ SRC_CHECK_FLAGS = $(wildcard $(CHECK_FLAGS)/*.cpp)
 BUILD_DIR = build
 MAIN_DIR = main
 OBJ_DIR = obj
-OBJECTS = $(wildcard $(OBJ_DIR)/*.o)
-EXECUTABLE_SPU = spu.exe
-EXECUTABLE_ASM = asm.exe
+OBJECTS_ASM = $(wildcard $(ASM)/$(OBJ_DIR)/*.o)
+OBJECTS_SPU = $(wildcard $(SPU)/$(OBJ_DIR)/*.o)
+EXECUTABLE_SPU = SPU.exe
+EXECUTABLE_ASM = My_asm.exe
 
 setup:
 	mkdir $(BUILD_DIR)
@@ -53,22 +57,22 @@ clean:
 	make clean_obj
 
 create_obj_asm:
-	$(CC) $(SOURCES) $(MAIN_DIR)/Assembler_main.cpp $(GET_FILE_SIZE_SRC) $(SRC_CHECK_FLAGS) $(SRC_STACK_CPP) -c -I $(HEADERS_DIR) -I $(HEADERS_STACK) -I $(GET_FILE_SIZE_HEADERS) -I $(HEADERS_CHECK_FLAGS) $(CFLAGS)
-	mv *.o $(OBJ_DIR)
+	$(CC) $(SOURCES_ASM) $(SRC_ASM)/Assembler_main.cpp $(GET_FILE_SIZE_SRC) $(SRC_CHECK_FLAGS) $(SRC_STACK_CPP) -c -I $(HEADERS_DIR) -I $(HEADERS_STACK) -I $(GET_FILE_SIZE_HEADERS) -I $(HEADERS_CHECK_FLAGS) $(CFLAGS)
+	mv *.o $(ASM)/$(OBJ_DIR)
 
 linkage_asm:
-	$(CC) $(OBJECTS) -o $(BUILD_DIR)/$(EXECUTABLE_ASM)
+	$(CC) $(OBJECTS_ASM) -o $(ASM)/$(BUILD_DIR)/$(EXECUTABLE_ASM)
 
 compile_asm:
 	make create_obj_asm
 	make linkage_asm
 
 create_obj_spu:
-	$(CC) $(SOURCES) $(MAIN_DIR)/Processor_main.cpp $(GET_FILE_SIZE_SRC) $(SRC_CHECK_FLAGS) $(SRC_STACK_CPP) -c -I $(HEADERS_DIR) -I $(HEADERS_CHECK_FLAGS) -I $(GET_FILE_SIZE_HEADERS) -I $(HEADERS_STACK) $(CFLAGS)
-	mv *.o $(OBJ_DIR)
+	$(CC) $(SOURCES_SPU) $(SRC_SPU)/Processor_main.cpp $(GET_FILE_SIZE_SRC) $(SRC_CHECK_FLAGS) $(SRC_STACK_CPP) -c -I $(HEADERS_DIR) -I $(HEADERS_CHECK_FLAGS) -I $(GET_FILE_SIZE_HEADERS) -I $(HEADERS_STACK) $(CFLAGS)
+	mv *.o $(SPU)/$(OBJ_DIR)
 
 linkage_spu:
-	$(CC) $(OBJECTS) -o $(BUILD_DIR)/$(EXECUTABLE_SPU)
+	$(CC) $(OBJECTS_SPU) -o $(SPU)/$(BUILD_DIR)/$(EXECUTABLE_SPU)
 
 compile_spu:
 	make create_obj_spu

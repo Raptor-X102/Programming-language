@@ -3,10 +3,10 @@
 
 #include <math.h>
 #include "Lang_definitions.h"
-#include "..\Binary_Trees\Tree_funcs.h"
-#include "..\Binary_Trees\Binary_tree_graph_debug.h"
-#include "..\Processor\headers\Assembler.h"
-#include "..\Processor\headers\Processor_Funcs.h"
+#include "Tree_funcs.h"
+#include "Binary_tree_graph_debug.h"
+#include "Assembler.h"
+#include "Processor_Funcs.h"
 
 const size_t Mem_blocks_amount = 1;
 const int Power_buffer_size = 12; // INT_MAX digits = 10
@@ -23,6 +23,8 @@ struct Variable_data {
     char* var_name;
     uint64_t var_len;
     double var_value;
+    int64_t line;
+    int64_t col;
     int64_t RAM_index;
 };
 
@@ -31,6 +33,7 @@ struct Var_list {
     Variable_data* var_list;
     size_t var_list_size;
     size_t free_var;
+    bool status;
 };
 
 struct Func_data {
@@ -39,6 +42,7 @@ struct Func_data {
     Var_list parameters;
     Var_list local_vars;
     int64_t func_memory;
+    int32_t func_rel32_address;
 };
 
 struct Func_data_list {
@@ -49,7 +53,7 @@ struct Func_data_list {
     int64_t vars_total;
 };
 
-const int Error_value = -1;
+const int Error_value = -0x404;
 Node* Lang_new_node(int node_type, const void* node_value, size_t node_val_size,
                     Node* left_node, Node* right_node);
 void Print_node_data(const void* data, FILE* file);
@@ -97,6 +101,7 @@ void Lang_dtor(Node* root);
 #define _IF_BRANCHES(left_node, right_node) Lang_new_node(IF_BRANCHES, &NULL_VALUE, sizeof(int64_t), left_node, right_node)
 #include "Var_list_funcs.h"
 #include "Lang_read_funcs.h"
+#include "Backend_funcs_x64.h"
+#include "Backend_funcs_nasm.h"
 #include "Backend_funcs.h"
-
 #endif
